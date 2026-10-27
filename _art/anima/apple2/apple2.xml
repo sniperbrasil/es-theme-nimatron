@@ -1,0 +1,54 @@
+<!-- Apple II -->
+
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<view name="system">
+	
+	
+		<image name="BG_snapLegacy" extra="true">
+			<size>1 1</size>									
+			<pos>0.51875 0.2509259</pos>									
+			  <storyboard>
+					<animation property="x" to="0.1125" begin="" duration="5000" mode="EaseInOut"/>
+					<animation property="size" to="0.6567708 0.6564815" begin="5900" duration="500" mode="EaseIn"/>
+					<animation property="pos" to="0.2861979 0.3875" begin="5900" duration="500" mode="EaseIn"/>
+			  </storyboard>
+		</image>
+	
+		<image name="avatar" extra="static">
+		<path>./avatar.png</path>
+			<origin>0.2 0.6</origin>									
+			<size>0.2921875 0.3898148</size>									
+			<pos>0.25 0.499</pos>	
+			<zIndex>3</zIndex>
+			<color>202020</color>
+
+			<storyboard>
+        		<animation property="x" to="0.55" begin="900" duration="5000" mode="EaseOut"/>
+				<animation property="color" from="202020" to="FFFFFFFF" begin="" duration="5000" mode="linear"/>
+				
+				<animation property="size" to="0.3255208 0.5453704" begin="5900" duration="500" mode="Bump"/>
+				<animation property="pos" to="0.4674479 0.6100556" begin="5900" duration="500" mode="Bump"/>
+
+				
+
+			</storyboard>
+		</image>
+		
+		<!-- papel de parede -->
+<image name="wp_master" extra="true">
+		 <origin>0.5 0.5</origin>
+		 <pos>0.590 0.385</pos>
+         <size>0.7900 0.7530</size>
+		 <delay>0</delay>
+		 <path>./../../background/${system.theme}.jpg</path>
+	 <zIndex>2</zIndex>
+	 <storyboard>
+<animation property="scale" from="1.3" to="0.98" begin="0" duration="600" mode="linear"/>
+</storyboard>
+</image>
+		
+	</view>
+
+</theme>

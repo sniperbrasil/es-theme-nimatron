@@ -1,0 +1,44 @@
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<view name="system">
+	
+		<image name="avatar" extra="static">
+			<pos>0.262 0.047</pos>
+			<maxSize>0.52 0.9067</maxSize>
+			<storyboard>
+				<animation property="y" from="2" begin="0" duration="350" mode="easyOut"/>
+        		<animation property="scale" to="1.02" begin="350" autoreverse="true" duration="300" repeat="forever" mode="easyIn"/>
+        		<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+			</storyboard>
+		</image>
+		
+		<image name="avatar2" extra="static">
+			<origin>0 0</origin>
+			<pos>0.487 -0.245</pos>
+			<maxSize>0.265 0.557</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<path>./avatar-saw.png</path>
+			<zIndex>3</zIndex>
+			<storyboard>
+				<animation property="y" from="-1" begin="0" duration="1000" mode="easyOut"/>
+        		<animation property="rotation" to="360" begin="0" autoreverse="false" duration="800" repeat="forever" mode="linear"/>
+			</storyboard>
+		</image>
+		
+		<!-- papel de parede -->
+<image name="wp_master" extra="true">
+		 <origin>0.5 0.5</origin>
+		 <pos>0.590 0.385</pos>
+         <size>0.7900 0.7530</size>
+		 <delay>0</delay>
+		 <path>./../../background/${system.theme}.jpg</path>
+	 <zIndex>2</zIndex>
+	 <storyboard>
+<animation property="scale" from="1.3" to="0.98" begin="0" duration="600" mode="linear"/>
+</storyboard>
+</image>
+		
+	</view>
+
+</theme>

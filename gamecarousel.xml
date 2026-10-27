@@ -1,0 +1,1161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+
+<view name="gamecarousel">
+
+<!----------------------------------------------------------->
+<!------------------------ CARROUSEL ------------------------>
+<!----------------------------------------------------------->
+
+<gamecarousel name="gamecarousel">
+<!--type>vertical_wheel</type-->
+<type>vertical</type>
+<pos>0.010 0.210</pos>
+<size>1 0.730</size>
+<logoScale>2.4</logoScale>
+<logoSize>0.09 0.11</logoSize>
+<color>00000000</color>
+<maxLogoCount>7</maxLogoCount>
+<logoRotation>13</logoRotation>
+<logoRotationOrigin>-4.0 0.2</logoRotationOrigin>
+<logoAlignment>left</logoAlignment>   
+<imageSource>marquee</imageSource>
+<minLogoOpacity>1</minLogoOpacity>
+<transitionSpeed>800</transitionSpeed>
+<scrollSound>./_art/sounds/click.mp3</scrollSound>
+<zIndex>7</zIndex>
+</gamecarousel> 
+
+<!-- JOGO SEM MARQUEE DO SISTEMA  -->		
+	<text name="gamecarouselLogoText">
+	
+	    <origin>0.5 0.5</origin>									
+		<size>0.540 0.100</size>									
+		<pos>0.25 0.26</pos>
+		<opacity>1</opacity>
+		 
+        <alignment>left</alignment>
+        <verticalAlignment>top</verticalAlignment>
+		<forceUppercase>1</forceUppercase>
+		<color>f5f542</color>
+		<!--fontPath>./_art/font/Maxlock.ttf</fontPath-->
+		 <!--fontPath>./_art/font/flatwheat.ttf</fontPath-->
+		 <fontPath>./_art/font/Blue Water.otf</fontPath>
+		 
+		<fontSize>0.040</fontSize>
+		<lineSpacing>0.9</lineSpacing>
+		<glowColor>000000</glowColor>
+      <glowSize>3</glowSize>
+		<zIndex>22</zIndex>
+		
+		<storyboard event="activate">
+        <!--animation property="scale" from="1.0" to="1.50" begin="700" duration="300" mode="Linear"/-->
+        <!--animation property="x" to="-0.01" begin="700" duration="300" mode="linear"/-->
+				
+		<animation property="y" to="-0.12" begin="900" duration="300" mode="linear"/>
+        <animation property="x" to="0.06" begin="900" duration="300" mode="linear"/>
+		
+        <animation property="opacity" to="1" begin="0" duration="400" mode="Linear"/>
+        </storyboard>
+
+       <storyboard event="scroll">
+       <animation property="opacity" from="1" to="0.01" begin="700" duration="700" mode="Linear"/>
+       </storyboard>
+		
+    </text>
+
+<!-- EFEITOS NA ROLETA	--> 
+
+<image name="gamecarouselLogo">
+<storyboard event="activate">
+<!--animation property="scale" from="1.3" to="2.1" begin="100" duration="200" mode="Linear"/-->
+<!--animation property="x" to="-0.001" begin="200" duration="300" mode="linear"/-->
+<animation property="y" to="-0.12" begin="900" duration="300" mode="linear"/>
+<animation property="x" to="0.04" begin="900" duration="300" mode="linear"/>
+<animation property="opacity" to="1" begin="0" duration="500" mode="Linear"/>
+</storyboard>
+
+<storyboard event="scroll">
+<animation property="opacity" from="1" to="0.01" begin="800" duration="700" mode="Linear"/>
+</storyboard>
+
+<!--storyboard event="deactivate">
+<animation property="opacity" to="1" begin="0" duration="500" mode="Linear"/>
+
+</storyboard-->
+</image>
+
+<!--image name="gamecarouselLogo">
+<storyboard event="activate">
+<animation property="scale" to="1.2" begin="0" duration="500" mode="Linear"/>
+</storyboard>
+<storyboard event="scroll">
+<animation property="scale" to="1" begin="0" duration="500" mode="Linear"/>
+
+</storyboard>
+<storyboard event="deactivate">
+<animation property="scale" to="1" begin="0" duration="500" mode="Linear"/>
+
+</storyboard>
+</image-->
+
+
+
+
+<!-- margens superior -->
+
+<image name="backgroundOpaque" extra="true">
+      <pos>0 0</pos>
+      <size>1 0.150</size>
+      <origin>0 0</origin>
+      <path>./_art/white.png</path>
+      <color>000000FF</color>
+      <zIndex>11</zIndex>
+    </image>
+
+<image name="margemsuperior" extra="true">
+      <tile>false</tile>
+      <size>1 0.01</size>
+      <pos>0 0.15</pos>
+      <origin>0 0</origin>
+      <path>./_art/bg.png</path>
+      <color>ffff00</color>
+      <zIndex>9</zIndex>
+      <clipRect>0 0 1 0.160</clipRect>
+    </image>
+	
+<!--  construcao dos paineis  -->
+<image name="back_padrao_horizontal_1" extra="true">
+     <origin>0.5 0.5</origin>
+     <path>./_art/back_padrao.png</path>  
+     <pos>0.500 0.207</pos>
+     <size>1 0.094</size>
+	 <opacity>1</opacity>
+     <zIndex>7</zIndex>
+     <color>00008B</color>
+</image>
+
+<image name="back_padrao_horizontal_2" extra="true">
+     <origin>0.5 0.5</origin>
+     <path>./_art/bg.png</path>  
+     <pos>0.500 0.912</pos>
+     <size>1 0.075</size>
+	 <opacity>1</opacity>
+     <zIndex>10</zIndex>
+     <color>00008B</color>
+</image>	
+
+<!----------------------------------------------------------->
+<!------------------------ HELPSYSTEM ----------------------->
+<!-------E margem inferior----------------------------------->
+
+
+<!-- Help do rodape -->
+<helpsystem name="help">
+     <textColor>ffffff</textColor>
+     <!--origin>0.5 0.5</origin-->
+     <fontPath>./_art/font/ubuntu_condensed.ttf</fontPath>
+     <fontSize>0.0290</fontSize>     
+     <pos>0.015 0.965</pos> 
+	 <iconColor>ffff00</iconColor>
+      <iconA>./resources/help/buttons_east.svg</iconA>
+      <iconB>./resources/help/buttons_south.svg</iconB>
+      <iconX>./resources/help/buttons_north.svg</iconX>
+      <iconY>./resources/help/buttons_west.svg</iconY> 
+</helpsystem>
+
+
+
+<!-- logo Por Sistema -->		
+<image name="logo_por_sistema" extra="true">
+    <origin>0.5 0.5</origin>
+    <pos>0.170 0.080</pos>
+    <maxSize>0.300 0.145</maxSize>
+    <path>./_art/logo/${system.theme}.png</path>
+    <zIndex>25</zIndex> 
+</image>
+
+
+<!----------------------------------------------------------->
+<!---------------------- ARTES SISTEMA ---------------------->
+<!----------------------------------------------------------->
+
+<image name="fundo" extra="true">
+<origin>0 0</origin>
+    <pos>0.015 0.015</pos>
+    <size>0.975 0.925</size>
+    <path>./_art/background/${system.theme}.jpg</path>
+	<zIndex>2</zIndex>
+</image>
+
+<image name="margem_inferior_list" extra="true">
+      <tile>false</tile>
+      <size>1 0.01</size>
+      <pos>0 0.945</pos>
+      <origin>0 0</origin>
+      <path>./_art/bg.png</path>
+      <color>ffff00</color>
+      <zIndex>122</zIndex>
+      
+    </image>
+
+<image name="back_padrao_rodape" extra="true">
+     <origin>0.5 0.5</origin>
+     <path>./_art/back_padrao.png</path>  
+     <pos>0.500 0.975</pos>
+     <origin>0.5 0.5</origin>
+     <size>0.995 0.050</size>
+	 <opacity>1</opacity>
+     <zIndex>4</zIndex>
+     <!--color>00008b</color-->
+	 <color>000000</color>
+</image>
+
+
+<!-- FUNDO TRANSPARENTE ESCURO -->
+<image name="fundo_transp" extra="true">
+<pos>0 0.57</pos>
+<origin>0 0.5</origin>
+<size>1 0.630</size>
+<color>000000</color>
+<opacity>0.4</opacity>
+<zIndex>6</zIndex>
+<path>./_art/bg.png</path>
+
+<!--storyboard event="activate">
+		<animation property="opacity" to="1" begin="500" duration="400" mode="Linear"/>
+        </storyboard-->
+
+</image>
+
+
+	
+	<!-- WallPaper ROLANDO PARA O LADO -->
+		<image name="animatedimage1" extra="true">
+			<visible>!exists({game:fanart})</visible>
+			<default>${intfanartfresh}</default>
+			<path>./_art/background/{system:theme}.jpg</path>
+			<pos>0 0.57</pos>
+			<origin>0 0.5</origin>
+			<size>0.60 0.630</size>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0</opacity>
+			<zIndex>5</zIndex>
+			<storyboard event="activate">
+				<animation property="opacity" to="1" begin="100"/>
+				<animation property="x" from="0" to="-1.1" begin="600" duration="15000" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="animatedimage2" extra="true">
+			<visible>!exists({game:fanart})</visible>
+			<default>${intfanartfresh}</default>
+			<path>./_art/background/{system:theme}.jpg</path>
+			<pos>0.55 0.57</pos>
+			<origin>0 0.5</origin>
+			<size>0.60 0.630</size>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0</opacity>
+			<flipX>false</flipX>
+			<zIndex>5</zIndex>
+			<storyboard event="activate">
+				<animation property="opacity" to="1" begin="100"/>
+				<animation property="x" from="0.55" to="-0.55" begin="600" duration="15000" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="animatedimage3" extra="true">
+			<visible>!exists({game:fanart})</visible>
+			<default>${intfanartfresh}</default>
+			<path>./_art/background/{system:theme}.jpg</path>
+			<pos>1.1 0.57</pos>
+			<origin>0 0.5</origin>
+			<size>0.60 0.630</size>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0</opacity>
+			<zIndex>5</zIndex>
+			<storyboard event="activate">
+				<animation property="opacity" to="1" begin="100"/>
+				<animation property="x" from="1.1" to="0" begin="600" duration="15000" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="animatedimage4" extra="true">
+			<visible>!exists({game:fanart})</visible>
+			<default>${intfanartfresh}</default>
+			<path>./_art/background/{system:theme}.jpg</path>
+			<pos>0.55 0.57</pos>
+			<origin>0 0.5</origin>
+			<size>0.60 0.630</size>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0</opacity>
+			<flipX>false</flipX>
+			<zIndex>5</zIndex>
+			<storyboard event="activate">
+				<animation property="opacity" to="1" begin="100"/>
+				<animation property="x" from="1.65" to="0.55" begin="600" duration="15000" repeat="forever"/>
+			</storyboard>
+		</image>
+		
+	<!-- FANART ROLANDO PARA O LADO -->
+		<image name="animatedfanart1" extra="true">
+			<visible>exists({game:fanart})</visible>
+			<path>{game:fanart}</path>
+			<pos>0 0.57</pos>
+			<origin>0 0.5</origin>
+			<size>0.60 0.630</size>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0</opacity>
+			<zIndex>4</zIndex>
+			<storyboard event="activate">
+				<animation property="opacity" to="1" begin="100"/>
+				<animation property="x" from="0" to="-1.1" begin="600" duration="15000" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="animatedfanart2" extra="true">
+			<visible>exists({game:fanart})</visible>
+			<path>{game:fanart}</path>
+			<pos>0.55 0.57</pos>
+			<origin>0 0.5</origin>
+			<size>0.60 0.630</size>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0</opacity>
+			<flipX>false</flipX>
+			<zIndex>5</zIndex>
+			<storyboard event="activate">
+				<animation property="opacity" to="1" begin="100"/>
+				<animation property="x" from="0.55" to="-0.55" begin="600" duration="15000" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="animatedfanart3" extra="true">
+			<visible>exists({game:fanart})</visible>
+			<path>{game:fanart}</path>
+			<pos>1.1 0.57</pos>
+			<origin>0 0.5</origin>
+			<size>0.60 0.630</size>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0</opacity>
+			<zIndex>5</zIndex>
+			<storyboard event="activate">
+				<animation property="opacity" to="1" begin="100"/>
+				<animation property="x" from="1.1" to="0" begin="600" duration="15000" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="animatedfanart4" extra="true">
+			<visible>exists({game:fanart})</visible>
+			<path>{game:fanart}</path>
+			<pos>0.55 0.57</pos>
+			<origin>0 0.5</origin>
+			<size>0.60 0.630</size>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0</opacity>
+			<flipX>false</flipX>
+			<zIndex>5</zIndex>
+			<storyboard event="activate">
+				<animation property="opacity" to="1" begin="100"/>
+				<animation property="x" from="1.65" to="0.55" begin="600" duration="15000" repeat="forever"/>
+			</storyboard>
+		</image>
+
+<!----------------------------------------------------------->
+<!----------------------- AREA DO VIDEO --------------------->
+<!----------------------------------------------------------->
+
+<!--  gabinete arcade  -->
+<image name="gabineteArca2" extra="true">
+     <path>./_art/arcade.png</path>  
+     <pos>0.825 0.510</pos>
+     <origin>0.5 0.5</origin>
+     <size>0.700 0.800</size>
+	 <opacity>1</opacity>
+     <zIndex>12</zIndex>
+     <color>FFFFFF</color>
+</image>
+
+
+
+
+
+
+
+
+
+<!--------------------- capa do jogo ---------------------->
+
+<image name="md_thumbnail">
+
+      <pos>0.440 0.700</pos>
+      <origin>0.5 0.5</origin>
+	  <maxSize>0.199 0.280</maxSize>
+	  <alignment>center</alignment>
+	  <delay>2.5</delay>
+      <effect>bump</effect>
+	  <opacity>0</opacity>
+      <zIndex>19</zIndex>
+	  
+	  <storyboard>
+		<animation property="opacity" from="0" to="1" begin="200" duration="700" mode="Linear"/>
+        </storyboard>
+	       
+</image>
+
+<!----------------------NOME DO JOGO-------------------------------->
+<text name="name_Id" extra="true">
+		 <text>{game:name}</text>
+         <size>0.390 0.50</size>
+         <color>ffffff</color>
+         <pos>0.050 0.160</pos>
+         <fontPath>./_art/font/flatwheat.ttf</fontPath>
+         <fontSize>0.025</fontSize>
+         <origin>0 0</origin>
+         <glowColor>000000</glowColor>
+         <glowSize>1</glowSize>
+         <glowOffset>3 2</glowOffset>
+         <zIndex>502</zIndex>
+         <singleLineScroll>true</singleLineScroll>
+         <backgroundColor>ff000000</backgroundColor>
+		 <alignment>left</alignment>
+		 <verticalAlignment>top</verticalAlignment>
+
+    </text>
+	
+	<!---------------NOME DO SISTEMA-------------------------------------------->
+	<text name="WhatSystemGAME" extra="static">
+		<origin>0 0</origin>									
+		<size>0.285 0.050</size>									
+		<pos>0.440 0.095</pos>
+		<opacity>1</opacity>
+		<text>{game:systemName}</text> 
+        <alignment>left</alignment>
+        <verticalAlignment>top</verticalAlignment>
+		<forceUppercase>1</forceUppercase>
+		<color>f5f542</color>
+		<fontPath>./_art/font/driuscond.ttf</fontPath>
+		<fontSize>0.025</fontSize>
+		<zIndex>22</zIndex>
+		<singleLineScroll>true</singleLineScroll>
+    </text>
+	
+	<!---------------TIPO DE HARDWARE-------------------------------------------->
+	<text name="QualHardware" extra="static">
+		<origin>0 0</origin>									
+		<minSize>0.10 0.10</minSize>									
+		<pos>0.495 0.030</pos>
+		<opacity>1</opacity>
+		<text>{system:hardwareType}</text> 
+        <alignment>left</alignment>
+        <verticalAlignment>top</verticalAlignment>
+		<forceUppercase>1</forceUppercase>
+		<color>ffffff</color>
+		<fontPath>./_art/font/arcade_light.ttf</fontPath>
+		<fontSize>0.043</fontSize>
+		<zIndex>22</zIndex>
+    </text>
+
+    <image name="hard_syst" extra="true">
+	  <path>./_art/HARD_SYSTEM.png</path>
+      <pos>0.424 0.058</pos>
+      <origin>0 0.5</origin>
+	  <size>0.070 0.115</size>
+	  <alignment>left</alignment>
+	  <color>FFFFFF</color>
+      <zIndex>99</zIndex>
+	  <storyboard event="open" repeatAt="350">
+	 
+				<animation property="color" to="00ff7f" begin="1000" duration="100" autoreverse="true" repeat="5" mode="linear"/>
+				<animation property="color" to="ff0000" begin="2000" duration="100" autoreverse="true" repeat="5" mode="linear"/>
+				<animation property="color" to="ffff00" begin="3000" duration="100" autoreverse="true" repeat="5" mode="linear"/>
+				<animation property="color" to="0000ff" begin="4000" duration="100" autoreverse="true" repeat="5" mode="linear"/>
+			</storyboard>
+			<storyboard event="activate" repeatAt="350">
+				<animation property="color" to="ffff00" begin="1000" duration="100" autoreverse="true" repeat="10" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="10" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="color" to="ffff00" begin="3000" duration="100" autoreverse="true" repeat="10" mode="linear"/>
+			</storyboard>
+    </image>
+
+
+
+<!--  Detalhes -->
+
+	  <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, 
+					md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount, md_rating, md_developer, 
+					md_publisher, md_genre, md_playcount, md_lastplayed, md_lbl_description, md_description,
+					md_lbl_gametime, md_gametime">
+      <pos>1 1</pos>
+      </text>
+	  
+      <text name="md_lbl_rating,md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, 
+					md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_publisher, md_genre, md_playcount, 
+					md_lastplayed, md_lbl_description, md_description, md_players, md_releasedate, 
+					md_lbl_gametime, md_gametime">
+            <fontSize>0.020</fontSize>
+      </text>
+	  
+	  
+	  <!-- historia do jogo -->
+      <!--text name="md_description">
+         <pos>0.75 0.560</pos>
+         <size>0.230 0.300</size>
+		 <fontSize>0.022</fontSize>
+		 <opacity>0</opacity>
+		 <color>000000</color>
+		 <!--glowColor>000000</glowColor-->
+         <!--glowSize>1</glowSize>
+		 <alignment>center</alignment>
+		 <fontPath>./_art/font/flatwheat.ttf</fontPath>
+		 <lineSpacing>1.0</lineSpacing>
+         <zIndex>99</zIndex>
+		<storyboard>
+		<animation property="opacity" from="0" to="1" begin="1500" duration="700" mode="Linear"/>
+        </storyboard>
+		
+      </text-->
+	  
+	  
+	  <image name="fundo_historia" extra="true">
+<pos>0.165 0.675</pos>
+<origin>0.5 0.5</origin>
+<size>0.270 0.220</size>
+<opacity>0</opacity>
+<color>ffffff</color>
+<zIndex>8</zIndex>
+<path>./_art/white.png</path>
+
+        <!--storyboard>
+		<animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="Linear"/>
+        </storyboard-->
+		
+		
+<storyboard event="activate">
+<animation property="opacity" from="0" to="0.6" begin="1200" duration="500" mode="Linear"/>
+
+</storyboard>
+
+</image>
+
+<image name="fundo_historia2" extra="true">
+<pos>0.165 0.420</pos>
+<origin>0.5 0.5</origin>
+<size>0.270 0.290</size>
+<opacity>0</opacity>
+<color>ffffff</color>
+<zIndex>5</zIndex>
+<path>./_art/white2.png</path>
+
+        <!--storyboard>
+		<animation property="opacity" from="0" to="1" begin="1200" duration="500" mode="Linear"/>
+        </storyboard-->
+		
+		<storyboard event="activate">
+<animation property="opacity" to="0.8" begin="1200" duration="500" mode="Linear"/>
+
+</storyboard>
+
+</image>
+	  
+
+
+<!-- Avaliacao do jogo =estrelas=-->		
+	     <rating name="md_rating">      
+         <pos>0.060 0.882</pos>
+         <size>0.06 0.06</size>
+         <filledPath>./_art/star_filled.png</filledPath>
+         <unfilledPath>./_art/star_empty.png</unfilledPath>	
+		 <color>ffffff</color>
+		 <zIndex>15</zIndex>
+      </rating>	 
+
+<!-- Bandeira regiao do jogo, tem no EmulatonStation -->
+<image name="md_flag">
+	<origin>0 0</origin>
+	<pos>0.720 0.614</pos>
+	<maxSize>0.070 0.041</maxSize>
+	<rotation>6.5</rotation>
+	<zIndex>999</zIndex>
+	
+	<shader>
+    <path>./_art/efeitos/video_paralelogramo.glsl</path>
+
+    <!-- Inclinação do paralelogramo para a direita -->
+    <side>-0.20</side>
+
+    <!-- Elevação da quina inferior esquerda -->
+    <lowerLeftLift>0.16</lowerLeftLift>
+
+    <!-- Largura da região esquerda afetada -->
+    <leftSize>0.100</leftSize>
+</shader>
+	
+	
+</image>
+
+
+
+<!--  Informa se o jogo 'e favorito = pode escolher o lugar no tema -->	
+    <image name="md_favorite, md_notfavorite">
+      <origin>0 0</origin>
+	  <pos>0.050 0.700</pos>
+	  <maxSize>0.04 0.04</maxSize>
+	  <opacity>0</opacity>
+<color>ffff00</color>	  
+      <path>./_art/icons/favorite.png</path>
+      <zIndex>999</zIndex>
+	  <storyboard event="activate">
+		<animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="Linear"/>
+        </storyboard>
+    </image> 
+	
+	<image name="md_notfavorite"> 
+			<color>7D7779</color>
+	</image>
+		
+<!--  Informa se o jogo 'e classificado como infantil = nao sei pra que serve = pode escolher o lugar no tema -->
+		<image name="md_kidgame, md_notkidgame"> 
+			<origin>0 0</origin>
+	        <pos>0.085 0.700</pos>
+	        <maxSize>0.04 0.04</maxSize>
+			<path>./_art/icons/kid.png</path>
+			<color>ffff00</color>
+			<opacity>0</opacity>
+			<zIndex>100</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="activate">
+		<animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="Linear"/>
+        </storyboard>
+		</image>
+		
+		<image name="md_notkidgame"> 
+			<color>7D7779</color>
+		</image>		
+
+<!--  Informa se o jogo tem ou nao um SaveState = pode escolher o lugar no tema -->
+    <image name="md_savestate,md_nosavestate">
+      <origin>0 0</origin>
+	  <pos>0.120 0.700</pos>
+	  <maxSize>0.04 0.04</maxSize>
+      <path>./_art/icons/savestate.png</path>
+	  <opacity>0</opacity>
+      <color>ffff00</color>
+      <zIndex>150</zIndex>
+	  <storyboard event="activate">
+		<animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="Linear"/>
+        </storyboard>
+    </image>
+    
+    <image name="md_nosavestate">
+      <color>7D7779</color>
+    </image>
+
+		
+<!--  Informa se o jogo tem ou nao uma Conquista no Retroarchievments = pode escolher o lugar no tema -->		
+		
+		<image name="md_cheevos,md_notcheevos">
+			<origin>0 0</origin>
+	        <pos>0.155 0.700</pos>
+	        <maxSize>0.04 0.04</maxSize>
+			<path>./_art/icons/cheevos.png</path>
+			<opacity>0</opacity>
+			<color>ffff00</color>
+			<zIndex>150</zIndex>
+			<storyboard event="activate">
+		<animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="Linear"/>
+        </storyboard>
+			
+		</image>
+		
+		
+		<image name="ghost_cheevos" extra="true">
+			<origin>0 0</origin>
+			<path>./_art/icons/cheevos.png</path>
+			<pos>0.155 0.700</pos>
+	        <maxSize>0.04 0.04</maxSize>     
+			<color>80808040</color>
+			<zIndex>149</zIndex> 
+			<color>7D7779</color>
+			<opacity>0</opacity>
+			<storyboard event="open">
+                <animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="linear"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" duration="1" mode="easeIn"/>
+            </storyboard>
+		</image>
+		
+		
+		<image name="md_notcheevos"> 
+			<color>7D7779</color>
+		</image>
+
+
+<!-- PDF from gamelist -->
+<!--  Informa se o jogo tem ou nao o manual = pode escolher o lugar no tema -->
+		<image name="md_manual,md_nomanual">
+			<origin>0 0</origin>
+	        <pos>0.190 0.700</pos>
+	        <maxSize>0.04 0.04</maxSize>
+			<path>./_art/icons/manual.png</path>
+			<opacity>0</opacity>
+			<color>ffff00</color>
+			<storyboard event="activate">
+		<animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="Linear"/>
+        </storyboard>
+		</image>
+	
+		<image name="md_nomanual">
+			<color>7D7779</color>
+		</image>
+
+<!--  Informa se o jogo tem ou nao o mapa = pode escolher o lugar no tema -->	
+		<image name="md_map,md_nomap">
+			<origin>0 0</origin>
+	        <pos>0.225 0.700</pos>
+	        <maxSize>0.04 0.04</maxSize>
+			<path>./_art/icons/map.png</path>
+			<opacity>0</opacity>
+			<color>ffff00</color>
+			<storyboard event="activate">
+		<animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="Linear"/>
+        </storyboard>
+		</image>
+	
+		<image name="md_nomap">
+			<color>7D7779</color>
+		</image>
+
+
+		
+<!--  Informa se o jogo foi escondido = entendi nada = nao sei pra que serve = pode escolher o lugar no tema -->
+    <image name="md_hidden">
+			<origin>0 0</origin>
+	        <pos>0.260 0.700</pos>
+	        <maxSize>0.04 0.04</maxSize>
+			<path>./_art/icons/hidden.png</path>
+			<color>ffff00</color>
+			<opacity>0</opacity>
+			<zIndex>100</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="activate">
+		<animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="Linear"/>
+        </storyboard>
+    </image>
+	
+	
+	<image name="ghost_hidden" extra="true">
+			<origin>0 0</origin>
+	        <pos>0.260 0.700</pos>
+	        <maxSize>0.04 0.04</maxSize>
+			<path>./_art/icons/hidden.png</path>
+			<color>7D7779</color>
+			<opacity>0</opacity>
+			<zIndex>149</zIndex>
+			<storyboard event="open">
+                <animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="linear"/>
+            </storyboard>
+			<storyboard event="activateNext">
+                 <animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="linear"/>
+            </storyboard>
+			<storyboard event="activatePrev">
+                <animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="linear"/>
+           </storyboard>
+			<storyboard event="deactivateNext">
+                <animation property="opacity" from="0" to="0" begin="0" duration="700" mode="easeIn"/>
+            </storyboard>
+			<storyboard event="deactivatePrev">
+                <animation property="opacity" from="0" to="0" begin="0" duration="700" mode="easeIn"/>
+            </storyboard>
+		</image>
+		
+		
+		
+		
+		
+	
+	<!-- PUBLICADOR -->  
+	<image name="logo_do_publicador" extra="true">
+		<path>./_art/logo/{game:publisher}.png</path>
+		<origin>0.5 0.5</origin>
+		<pos>0.930 0.790</pos>
+		<!--alignment>right</alignment-->
+		<!--verticalAlignment>bottom</verticalAlignment-->
+		<!--alignment>bottom</alignment-->
+		<!--size>0.200 0.210</size-->
+		<maxSize>0.120 0.120</maxSize>	
+		<opacity>1</opacity>
+		<rotation>-25</rotation>
+		<zIndex>96</zIndex>
+		
+		
+		
+	</image>
+	
+	
+	
+	<!-- DESENVOLVEDOR -->  
+	  <text name="desenvolv" extra="true">
+	 	 <text>*** {game:developer} ***</text>
+         <size>0.200 0.50</size>
+         <color>00ffff</color>
+         <pos>0.750 0.318</pos>
+         <fontPath>./_art/font/arcade_i.ttf</fontPath>
+         <fontSize>0.032</fontSize>
+		 <forceUppercase>1</forceUppercase>
+         <origin>0 0</origin>
+		 <glowColor>000000</glowColor>
+         <glowSize>1</glowSize>
+         <glowOffset>3 2</glowOffset>
+         <zIndex>502</zIndex>
+         <singleLineScroll>true</singleLineScroll>
+         <backgroundColor>ff000000</backgroundColor>
+		 <alignment>left</alignment>
+		 <verticalAlignment>top</verticalAlignment>
+
+    </text>
+	
+	<image name="back_desenv" extra="true">
+      <pos>0.750 0.317</pos>
+      <size>0.210 0.042</size>
+      <origin>0 0</origin>
+	  <rotation>-1</rotation>
+      <path>./_art/white.png</path>
+      <color>000000</color>
+      <zIndex>15</zIndex>
+	  
+	  <shader>
+    <path>./_art/efeitos/video_paralelogramo.glsl</path>
+
+    <!-- Inclinação do paralelogramo para a direita -->
+    <side>-0.20</side>
+
+    <!-- Elevação da quina inferior esquerda -->
+    <lowerLeftLift>0.16</lowerLeftLift>
+
+    <!-- Largura da região esquerda afetada -->
+    <leftSize>0.99</leftSize>
+</shader>
+	  
+	  
+    </image>
+	
+	
+	
+	<!--  ANO LANÇAMENTO -->	
+	<text name="GAME YEAR" extra="true">
+        <!--origin>0.5 0.5</origin-->
+        <pos>0.860 0.660</pos>
+        <size>0.51 0.07</size>
+		<text>{game:releaseyear} >= 1 ? {game:releaseyear} : ' ' </text>
+        <fontPath>./_art/font/Digib.ttf</fontPath>
+        <fontSize>0.047</fontSize>
+		<opacity>1</opacity>
+        <color>ffff00</color>
+        <glowColor>00000000</glowColor>
+        <glowSize>1</glowSize>
+        <alignment>left</alignment>
+		<rotation>5</rotation>
+        <zIndex>370</zIndex>
+		
+		
+		
+	</text>
+		
+	<!--  CATEGORIA -->	
+	   <text name="categoria_do_jogo" extra="true">
+		 <text>Categoria:</text>
+		 <origin>0.5 0.5</origin>
+         <pos>0.11 0.220</pos>
+         <size>0.12 0.035</size>
+		 <fontSize>0.020</fontSize>
+		 <color>ffffff</color>
+		 <fontPath>./_art/font/flatwheat.ttf</fontPath>
+		 <zIndex>45</zIndex>                  
+      </text>
+	  
+	<text name="genre_Id" extra="true">
+	  <text> * {game:genre} * </text>
+	  
+	  <origin>0.5 0.5</origin>
+	  <pos>0.38 0.220</pos>
+	  <color>ffffff</color>
+	  <fontSize>0.023</fontSize>
+	  <fontPath>./_art/font/gobold-blocky-regular.otf</fontPath>
+	  <size>0.45 0.025</size>
+	  <zIndex>22</zIndex>
+		  
+	</text>  
+
+
+<!--  Publicador =texto principal= -->	  
+      <!--text name="md_lbl_publisher">
+         <pos>0.070 0.710</pos>
+         <size>0.12 0.035</size>
+		 <fontSize>0.020</fontSize>
+		 <color>ffff00</color>
+		 <opacity>0</opacity>
+		 <fontPath>./_art/font/flatwheat.ttf</fontPath>
+		 <zIndex>45</zIndex>
+<storyboard event="activate">
+		<animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="Linear"/>
+        </storyboard>		 
+      </text-->
+	  
+<!--  Publicador =apresentacao= -->	  
+      <text name="md_publisher">
+	  <origin>0.5 0.5</origin>
+         <pos>0.165 0.765</pos>
+         <size>0.240 0.030</size>
+		 <alignment>center</alignment>
+		 <fontSize>0.022</fontSize>
+		 <color>ffff00</color>
+		 <glowColor>000000</glowColor>
+         <glowSize>2</glowSize>
+		 <fontPath>./_art/font/flatwheat.ttf</fontPath>
+		 <singleLineScroll>true</singleLineScroll>
+		 <rotation>0</rotation>
+		 <opacity>0</opacity>
+		 <zIndex>45</zIndex>
+		 
+		<storyboard>
+		<animation property="opacity" from="0" to="1" begin="1100" duration="500" mode="Linear"/>
+        </storyboard>	
+	 
+      </text>
+
+	  <text name="md_players">
+		<origin>0.5 0.5</origin>
+		<fontPath>./_art/font/players.ttf</fontPath>
+		<size>0.10 0.100</size>
+		<pos>0.560 0.910</pos>
+		<fontSize>0.040</fontSize>
+		<color>ffffff</color>
+        <singleLineScroll>true</singleLineScroll>
+			<storyboard event="open" repeat="forever">
+				<animation property="color" to="00BFFF" begin="1000" duration="100" autoreverse="true" repeat="10" mode="linear"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="color" to="00BFFF" begin="1000" duration="100" autoreverse="true" repeat="10" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" duration="10" mode="linear"/>
+			</storyboard>
+    </text>
+	
+	
+<!--  moldura detalhes jogo ultima vez e tempo	-->	
+
+	
+	<image name="moldura_DETdoJOGO" extra="true">
+      <size>0.450 0.185</size>
+      <origin>0.5 0.5</origin>
+	  <pos>0.945 0.070</pos>
+      <path>./_art/moldura.png</path>
+      <color>ffff00</color>
+      <zIndex>99</zIndex>
+    </image>	
+	    
+<!--  Vezes jogadas =texto principal= -->
+         <text name="md_lbl_playcount">
+         <pos>0.070 0.580</pos>
+         <size>0.12 0.035</size>
+		 <fontSize>0.025</fontSize>
+		 <color>000000</color>
+		 <opacity>0</opacity>
+		 <zIndex>35</zIndex>     
+
+        <storyboard event="activate">
+		<animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="Linear"/>
+        </storyboard>
+
+		 
+      </text>
+<!--  Vezes jogadas =apresentacao= 	-->
+         <text name="md_playcount">
+        <pos>0.190 0.580</pos>
+         <size>0.12 0.035</size>
+		 <fontSize>0.025</fontSize>
+		 <color>0000ff</color>
+		 <opacity>0</opacity>
+         <zIndex>35</zIndex>
+
+        <storyboard event="activate">
+		<animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="Linear"/>
+        </storyboard>
+		 
+      </text>	
+
+<!--  ultima vez jogado =texto principal= 	-->  
+      <text name="md_lbl_lastplayed">
+         <pos>0.070 0.610</pos>
+         <size>0.12 0.035</size>
+		 <fontSize>0.025</fontSize>
+		 <color>000000</color>
+		 <opacity>0</opacity>
+		 <zIndex>35</zIndex>
+
+
+
+<storyboard event="activate">
+		<animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="Linear"/>
+        </storyboard>
+		 
+      </text>
+<!--  ultima vez jogado =apresentacao= 	 --> 
+      <datetime name="md_lastplayed">
+         <pos>0.190 0.610</pos>
+         <size>0.12 0.035</size>
+		 <fontSize>0.025</fontSize>
+		 <color>0000ff</color>
+		 <opacity>0</opacity>
+         <zIndex>35</zIndex>
+
+<storyboard event="activate">
+		<animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="Linear"/>
+        </storyboard>
+
+		 
+      </datetime> 
+
+<!--  tempo jogado =texto principal= -->
+         <text name="md_lbl_gametime">
+         <pos>0.070 0.640</pos>
+         <size>0.12 0.035</size>
+		 <fontSize>0.025</fontSize>
+		 <opacity>0</opacity>
+		 <color>000000</color>
+		 <zIndex>35</zIndex>
+
+<storyboard event="activate">
+		<animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="Linear"/>
+        </storyboard>
+		 
+      </text>
+<!--  tempo jogado =apresentacao= 	-->
+         <text name="md_gametime">
+         <pos>0.190 0.640</pos>
+         <size>0.12 0.035</size>
+		 <fontSize>0.025</fontSize>
+		 <color>0000ff</color>
+		 <opacity>0</opacity>
+         <zIndex>35</zIndex>
+
+<storyboard event="activate">
+		<animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="Linear"/>
+        </storyboard>
+		 
+      </text>
+	  
+<!--  NOVA AREA DE VIDEO 	-->	  
+	  
+	  <video name="staticVIDEO3" extra="true">
+
+            <pos>0.860 0.504</pos>
+            <size>0.222 0.277</size>
+            <origin>0.5 0.5</origin>
+			<effect>none</effect>
+	        <!--loops>99</loops-->
+	        <!--delay>0.50</delay--> 
+	        
+            <path>./_art/static.mp4</path>
+
+            <opacity>1</opacity>
+            <zIndex>6</zIndex>
+
+         <shader> 
+	<path>./_art/efeitos/testeD.glsl</path>
+	<side>-0.26</side>
+<backTilt>0.00</backTilt>
+            </shader>
+
+</video>
+
+<video name="md_video">
+    
+            <pos>0.853 0.504</pos>
+            <size>0.216 0.277</size>
+            <origin>0.5 0.5</origin>
+			<effect>none</effect>
+			<rotation>-1</rotation>
+			<zIndex>7</zIndex>
+<shader>
+    <path>./_art/efeitos/video_paralelogramo.glsl</path>
+
+    <!-- Inclinação do paralelogramo para a direita -->
+    <side>-0.20</side>
+
+    <!-- Elevação da quina inferior esquerda -->
+    <lowerLeftLift>0.16</lowerLeftLift>
+
+    <!-- Largura da região esquerda afetada -->
+    <leftSize>0.99</leftSize>
+</shader>
+
+</video>
+
+<!-- image -->
+<image name="md_image" extra="true">
+	        <pos>0.853 0.504</pos>
+            <size>0.216 0.277</size>
+            <origin>0.5 0.5</origin>
+			<!--effect>none</effect-->
+			<rotation>-1</rotation>
+
+    <shader>
+    <path>./_art/efeitos/parallelogram_image.glsl</path>
+
+   <side>-0.20</side>
+    <lowerLeftLift>0.12</lowerLeftLift>
+    <leftSize>0.99</leftSize>
+    <imageBottomY>0</imageBottomY>
+   
+</shader>
+	<zIndex>7</zIndex> 
+</image>
+
+
+
+<!-- Marquee/Logo do jogo -->
+<image name="md_marquee">
+    <pos>0.820 0.218</pos>
+    <maxSize>0.220 0.095</maxSize>
+    <origin>0.5 0.5</origin>
+	<rotation>-4</rotation>
+    <zIndex>30</zIndex>
+	
+	<!--shader> 
+	<path>./_art/efeitos/testeD.glsl</path>
+	<side>-0.18</side>
+<backTilt>0.00</backTilt>
+            </shader-->
+			
+			
+			<shader>
+    <path>./_art/efeitos/image_paralelogramo.glsl</path>
+
+    <!-- Inclinação do paralelogramo para a direita -->
+    <side>-0.14</side>
+
+    <!-- Elevação da quina inferior esquerda -->
+    <lowerLeftLift>0.09</lowerLeftLift>
+
+    <!-- Largura da região esquerda afetada -->
+    <leftSize>0.99</leftSize>
+</shader>
+	
+</image>
+	  
+
+
+</view>
+ 
+</theme>

@@ -1,0 +1,79 @@
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<view name="system">
+
+		<!-- NEVE DIREITA-->
+		<image name="avatar1" extra="static">
+			<origin>0 -0</origin>
+			<pos>0.40 -0.999</pos>
+			<maxSize>1.20 1.20</maxSize>
+			<path>./neve.png</path>
+			<zIndex>3</zIndex>
+			<storyboard repeatAt="999"> 
+            <animation property="y" from="-0.999" to="0.999" begin="0" duration="19500" mode="linear"/>
+         </storyboard>
+		</image>
+				
+		<image name="avatar2" extra="static">
+			<origin>0 -0</origin>
+			<pos>0.40 -0.999</pos>
+			<maxSize>1.20 1.20</maxSize>
+			<path>./neve.png</path>
+			<zIndex>3</zIndex>
+			<storyboard repeatAt="999"> 
+            <animation property="y" from="-0.999" to="0.999" begin="5000" duration="21500" mode="linear"/>
+         </storyboard>
+		</image>
+				
+		<!--NEVE ESQUERDA--> 
+		<image name="avatar3" extra="static">
+			<origin>0 -0</origin>
+			<pos>0.05 -0.999</pos>
+			<maxSize>1.20 1.20</maxSize>
+			<path>./neve.png</path>
+			<zIndex>3</zIndex>
+			<storyboard repeatAt="999"> 
+        	<animation property="y" from="-0.999" to="0.999" begin="0" duration="19500" mode="linear"/>
+         </storyboard>
+		</image>
+		
+		<image name="avatar4" extra="static">
+			<origin>0 -0</origin>
+			<pos>0.05 -0.999</pos>
+			<maxSize>1.20 1.20</maxSize>
+			<path>./neve.png</path>
+			<zIndex>3</zIndex>
+			<storyboard repeatAt="999"> 
+            <animation property="y" from="-0.999" to="0.999" begin="5000" duration="21500" mode="linear"/>
+         </storyboard>
+		</image>
+				
+		<!--NEVE MEIO--> 
+		<image name="avatar5" extra="static">
+			<origin>0 -0</origin>
+			<pos>0.20 -0.999</pos>
+			<maxSize>1.00 1.00</maxSize>
+			<path>./neve.png</path>
+			<zIndex>3</zIndex>
+			<storyboard repeatAt="999"> 
+        	<animation property="y" from="-0.999" to="0.999" begin="10000" duration="23500" mode="linear"/>
+         </storyboard>
+		</image>
+			
+<!-- papel de parede -->
+<image name="wp_master" extra="true">
+		 <origin>0.5 0.5</origin>
+		 <pos>0.590 0.385</pos>
+         <size>0.7900 0.7530</size>
+		 <delay>0</delay>
+		 <path>./../../background/${system.theme}.jpg</path>
+	 <zIndex>2</zIndex>
+	 <storyboard>
+<animation property="scale" from="1.3" to="0.98" begin="0" duration="600" mode="linear"/>
+</storyboard>
+</image>
+
+			
+	</view>
+</theme>

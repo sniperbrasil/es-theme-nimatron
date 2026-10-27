@@ -1,0 +1,300 @@
+<!-- Neo Geo Pocket -->
+
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<view name="system">
+	
+	
+	
+	    <image name="avatar, avatar2" extra="static">
+		<path>./avatar.png</path>
+			<pos>0.300 0.120</pos>
+			<maxSize>0.52 0.8067</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>3</zIndex>
+		
+			<storyboard repeatAt="0">
+        		<animation property="opacity" from="0" to="1" duration="500" mode="linear"/>
+				<animation property="x" from="1" begin="0" duration="1000" mode="easyOut"/>
+
+        		<animation property="opacity" from="1" to="0" begin="5000" duration="10000" mode="easyOut"/>
+				<animation property="origin" to="0 -1" begin="5000" duration="10000" mode="linear"/>
+			</storyboard>
+		</image>
+			
+	
+		<image name="avatar-kyo" extra="static">
+			<origin>0 0</origin>									
+			<size>0.190625 0.7287037</size>									
+			<pos>-0.39 0.19</pos>
+			<scale>0.8</scale>
+			<opacity>1</opacity>
+			<path>./avatar-kyo.gif</path>
+			<zIndex>21</zIndex>
+
+			<storyboard>
+					<animation property="offsetX" to="0.8" begin="100" duration="350" mode="easeInOut"/>
+			</storyboard>
+		</image>
+		
+	
+		<image name="avatar-terry" extra="static">
+			<origin>0 0</origin>									
+			<size>0.1885417 0.5472222</size>									
+			<pos>1.29 0.22</pos>
+			<scale>0.8</scale>
+			<opacity>1</opacity>
+			<path>./avatar-terry.gif</path>
+			<zIndex>20</zIndex>
+			<storyboard>
+					<animation property="offsetX" to="-0.8" begin="300" duration="350" mode="easeInOut"/>
+			</storyboard>
+		</image>
+		
+	
+		
+		
+		
+		<image name="feuille_1" extra="true">
+			<origin>0 0</origin>									
+			<size>0.078125 0.1407407</size>									
+			<pos>-1 0</pos>
+			<scale>0.8</scale>
+			<path>./feuille_1.png</path>
+			<zIndex>19</zIndex>
+		
+		
+			<storyboard repeat="forever">
+				<animation property="rotation" begin="1000" to="90" duration="3700" mode="linear"/>
+				<animation property="x" from="-1" begin="1000" to="1" duration="3700" mode="easyIn"/>
+				<animation property="y" to="0.2" begin="2000" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.1" begin="2500" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.2" begin="3000" duration="500" mode="easyIn"/>	
+			</storyboard>			
+		</image>
+		
+		<image name="feuille_2" extra="true">
+			<origin>0 0</origin>									
+			<size>0.078125 0.1787037</size>									
+			<pos>-1 0</pos>
+			<scale>0.8</scale>
+			<path>./feuille_2.png</path>
+			<zIndex>19</zIndex>
+		
+		
+			<storyboard repeat="forever">
+				<animation property="rotation" 	  begin="1100" to="-90" duration="3700" mode="linear"/>
+				<animation property="x" from="-1" begin="1100" to="1" duration="3700" mode="easyIn"/>
+				<animation property="y" to="0.13" begin="2100" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.23" begin="2600" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.13" begin="3100" duration="500" mode="easyIn"/>	
+			</storyboard>			
+		</image>
+		
+		<image name="feuille_3" extra="true">
+			<origin>0 0</origin>									
+			<size>0.078125 0.1648148</size>									
+
+			<pos>-1 0</pos>
+			<scale>0.4</scale>
+			<path>./feuille_3.png</path>
+			<zIndex>19</zIndex>
+		
+		
+			<storyboard repeat="forever">
+				<animation property="rotation" 	  begin="1200" to="180" duration="3700" mode="linear"/>
+				<animation property="x" from="-1" begin="1200" to="1" duration="3700" mode="easyIn"/>
+				<animation property="y" to="0.15" begin="2200" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.25" begin="2700" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.15" begin="3200" duration="500" mode="easyIn"/>	
+			</storyboard>			
+		</image>
+		
+		<image name="feuille_4" extra="true">
+			<origin>0 0</origin>									
+			<size>0.078125 0.1435185</size>									
+
+			<pos>-1 0</pos>
+			<scale>0.5</scale>
+			<path>./feuille_4.png</path>
+			<zIndex>19</zIndex>
+		
+		
+			<storyboard repeat="forever">
+				<animation property="rotation" 	  begin="1250" to="360" duration="3700" mode="linear"/>
+				<animation property="x" from="-1" begin="1250" to="1" duration="3700" mode="easyIn"/>
+				<animation property="y" to="0.15" begin="2200" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.25" begin="2700" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.15" begin="3200" duration="500" mode="easyIn"/>	
+			</storyboard>			
+		</image>
+		
+		<image name="feuille_5" extra="true">
+			<origin>0 0</origin>									
+			<size>0.078125 0.1435185</size>									
+
+			<pos>-1 0</pos>
+			<scale>0.6</scale>
+			<path>./feuille_5.png</path>
+			<zIndex>19</zIndex>
+		
+		
+			<storyboard repeat="forever">
+				<animation property="rotation" 	  begin="1300" to="360" duration="3700" mode="linear"/>
+				<animation property="x" from="-1" begin="1300" to="1" duration="3700" mode="easyIn"/>
+				<animation property="y" to="0.15" begin="2200" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.25" begin="2700" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.15" begin="3200" duration="500" mode="easyIn"/>	
+			</storyboard>			
+		</image>
+		
+		
+		<image name="feuille_6" extra="true">
+			<origin>0 0</origin>									
+			<size>0.078125 0.0981481</size>									
+
+			<pos>-1 0</pos>
+			<scale>0.8</scale>
+			<path>./feuille_6.png</path>
+			<zIndex>19</zIndex>
+		
+		
+			<storyboard repeat="forever">
+				<animation property="rotation" 	  begin="1400" to="240" duration="3700" mode="linear"/>
+				<animation property="x" from="-1" begin="1400" to="1" duration="3700" mode="easyIn"/>
+				<animation property="y" to="0.15" begin="2200" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.25" begin="2700" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.15" begin="3200" duration="500" mode="easyIn"/>	
+			</storyboard>			
+		</image>
+		
+		
+		
+		
+		
+		<image name="feuille_7" extra="true">
+			<origin>0 0</origin>									
+			<size>0.078125 0.1648148</size>	
+			<pos>-1 0</pos>
+			<scale>0.6</scale>
+			<path>./feuille_3.png</path>
+			<zIndex>19</zIndex>
+		
+		
+			<storyboard repeat="forever">
+				<animation property="rotation" begin="2000" to="90" duration="3700" mode="linear"/>
+				<animation property="x" from="-1" begin="2000" to="1" duration="3700" mode="easyIn"/>
+				<animation property="y" to="0.32" begin="3000" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.31" begin="3500" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.32" begin="4000" duration="500" mode="easyIn"/>	
+			</storyboard>			
+		</image>
+		
+		<image name="feuille_8" extra="true">
+			<origin>0 0</origin>									
+			<size>0.078125 0.1435185</size>		
+			<pos>-1 0</pos>
+			<scale>0.5</scale>
+			<path>./feuille_4.png</path>
+			<zIndex>19</zIndex>
+		
+		
+			<storyboard repeat="forever">
+				<animation property="rotation" 	  begin="2100" to="-90" duration="3700" mode="linear"/>
+				<animation property="x" from="-1" begin="2100" to="1" duration="3700" mode="easyIn"/>
+				<animation property="y" to="0.43" begin="3100" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.53" begin="3600" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.43" begin="4100" duration="500" mode="easyIn"/>	
+			</storyboard>			
+		</image>
+		
+		<image name="feuille_9" extra="true">
+			<origin>0 0</origin>									
+			<size>0.078125 0.1407407</size>	
+			<pos>-1 0</pos>
+			<scale>0.4</scale>
+			<path>./feuille_1.png</path>
+			<zIndex>19</zIndex>
+		
+		
+			<storyboard repeat="forever">
+				<animation property="rotation" 	  begin="2200" to="180" duration="3700" mode="linear"/>
+				<animation property="x" from="-1" begin="2200" to="1" duration="3700" mode="easyIn"/>
+				<animation property="y" to="0.45" begin="3200" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.55" begin="3700" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.45" begin="4200" duration="500" mode="easyIn"/>	
+			</storyboard>			
+		</image>
+		
+		<image name="feuille_10" extra="true">
+			<origin>0 0</origin>									
+			<size>0.078125 0.1435185</size>		
+			<pos>-1 0</pos>
+			<scale>0.4</scale>
+			<path>./feuille_5.png</path>
+			<zIndex>19</zIndex>
+		
+		
+			<storyboard repeat="forever">
+				<animation property="rotation" 	  begin="2250" to="360" duration="3700" mode="linear"/>
+				<animation property="x" from="-1" begin="2250" to="1" duration="3700" mode="easyIn"/>
+				<animation property="y" to="0.45" begin="3200" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.55" begin="3700" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.45" begin="4200" duration="500" mode="easyIn"/>	
+			</storyboard>			
+		</image>
+		
+		<image name="feuille_11" extra="true">
+			<origin>0 0</origin>									
+			<size>0.078125 0.0981481</size>	
+			<pos>-1 0</pos>
+			<scale>0.5</scale>
+			<path>./feuille_6.png</path>
+			<zIndex>19</zIndex>
+		
+		
+			<storyboard repeat="forever">
+				<animation property="rotation" 	  begin="2300" to="360" duration="3700" mode="linear"/>
+				<animation property="x" from="-1" begin="2300" to="1" duration="3700" mode="easyIn"/>
+				<animation property="y" to="0.45" begin="3200" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.55" begin="3700" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.45" begin="4200" duration="500" mode="easyIn"/>	
+			</storyboard>			
+		</image>
+		
+		
+		<image name="feuille_12" extra="true">
+			<origin>0 0</origin>									
+			<size>0.078125 0.1787037</size>		
+			<pos>-1 0</pos>
+			<scale>0.7</scale>
+			<path>./feuille_2.png</path>
+			<zIndex>19</zIndex>
+		
+		
+			<storyboard repeat="forever">
+				<animation property="rotation" 	  begin="2400" to="240" duration="3700" mode="linear"/>
+				<animation property="x" from="-1" begin="2400" to="1" duration="3700" mode="easyIn"/>
+				<animation property="y" to="0.45" begin="3200" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.55" begin="3700" duration="500" mode="easyIn"/>
+				<animation property="y" to="0.45" begin="4200" duration="500" mode="easyIn"/>	
+			</storyboard>			
+		</image>
+		
+		<!-- papel de parede -->
+<image name="wp_master" extra="true">
+		 <origin>0.5 0.5</origin>
+		 <pos>0.590 0.385</pos>
+         <size>0.7900 0.7530</size>
+		 <delay>0</delay>
+		 <path>./../../background/${system.theme}.jpg</path>
+	 <zIndex>2</zIndex>
+	 <storyboard>
+<animation property="scale" from="1.3" to="0.98" begin="0" duration="600" mode="linear"/>
+</storyboard>
+</image>
+		
+	</view>
+
+</theme>

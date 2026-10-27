@@ -1,0 +1,36 @@
+<!-- advision Adventure Vision -->
+
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<view name="system">
+	
+		
+		
+
+		
+		<image name="ryuu" extra="true">
+			<pos>0.050 0.380</pos>									
+			<size>0.369 0.704</size>									
+			<path>./ryu.gif</path>
+			<zIndex>3</zIndex>
+			<flipX>true</flipX>
+			<scale>0.55</scale>
+			<zIndex>3</zIndex>
+			<storyboard repeat="forever">
+					<animation property="x" to="1" begin="0" duration="3000" mode="linear"/>
+					<!--animation property="y" to="1" begin="0" duration="8000" mode="linear"/-->
+					
+			</storyboard>
+		</image>
+		
+		
+		
+		
+		
+		
+		
+		
+	</view>
+
+</theme>

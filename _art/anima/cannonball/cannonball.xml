@@ -1,0 +1,29 @@
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<view name="system">
+
+		<text name="sys_label, sys_info" extra="static">
+			<visible>false</visible>
+		</text>
+		<image name="info-bg, synopsys" extra="static">
+			<visible>false</visible>
+		</image>
+		
+		
+		<!-- papel de parede -->
+<image name="wp_master" extra="true">
+		 <origin>0.5 0.5</origin>
+		 <pos>0.590 0.385</pos>
+         <size>0.7900 0.7530</size>
+		 <delay>0</delay>
+		 <path>./../../background/${system.theme}.jpg</path>
+	 <zIndex>2</zIndex>
+	 <storyboard>
+<animation property="scale" from="1.3" to="0.98" begin="0" duration="600" mode="linear"/>
+</storyboard>
+</image>
+
+	</view>
+
+</theme>

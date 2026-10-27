@@ -1,0 +1,43 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	
+	<view name="system">
+
+		<!-- HIDDE ELEMENTS -->
+		<text name="sys_label, sys_info" extra="static">
+			<visible>false</visible>
+		</text>
+		<image name="info-bg" extra="static">
+			<visible>false</visible>
+		</image>	
+		<video name="videoPreview" extra="static">
+			<visible>false</visible>
+		</video>
+
+		<!-- AVATAR -->
+		<image name="avatar" extra="static">
+			<pos>0.372 0.05</pos>
+			<maxSize>0.2625 0.821</maxSize>
+		</image>
+		
+		<!-- AVATAR 2 : Info, Kangourou Sprite -->
+		<image name="avatar2" extra="static">
+			<origin>0 0</origin>
+			<pos>0.18 0.046</pos>
+			<maxSize>0.236 0.633</maxSize>
+			<path>./avatar2.png</path>
+			<zIndex>17</zIndex>
+		</image>
+		
+		<!-- AVATAR 3 : Console, Buble Counter -->
+		<image name="avatar3" extra="static">
+			<origin>1 0</origin>
+			<pos>0.98 0.685</pos>
+			<maxSize>0.222 0.2591</maxSize>
+			<path>./avatar3.png</path>
+			<path>./avatar3-${activeView}.png</path>
+			<zIndex>18</zIndex>
+		</image>
+		
+	</view>
+</theme>

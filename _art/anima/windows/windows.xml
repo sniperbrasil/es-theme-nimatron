@@ -1,0 +1,140 @@
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<view name="system">
+
+		<!-- NEVE DIREITA-->
+		<image name="avatar1" extra="static">
+			<origin>0 -0</origin>
+			<pos>0.40 -0.999</pos>
+			<maxSize>1.20 1.20</maxSize>
+			<zIndex>2</zIndex>
+			<path>./neve.png</path>
+			<storyboard repeatAt="999"> 
+            <animation property="y" from="-0.999" to="0.999" begin="1" duration="19500" mode="linear"/>
+         </storyboard>
+		</image>
+				
+		<image name="avatar2" extra="static">
+			<origin>0 -0</origin>
+			<pos>0.40 -0.999</pos>
+			<maxSize>1.20 1.20</maxSize>
+			<path>./neve.png</path>
+			<storyboard repeatAt="999"> 
+            <animation property="y" from="-0.999" to="0.999" begin="5000" duration="21500" mode="linear"/>
+         </storyboard>
+		</image>
+
+		<!--NEVE ESQUERDA--> 
+		<image name="avatar3" extra="static">
+			<origin>0 -0</origin>
+			<pos>0.05 -0.999</pos>
+			<maxSize>1.20 1.20</maxSize>
+			<path>./neve.png</path>
+			<storyboard repeatAt="999"> 
+        	<animation property="y" from="-0.999" to="0.999" begin="0" duration="19500" mode="linear"/>
+         </storyboard>
+		</image>
+		
+		<image name="avatar4" extra="static">
+			<origin>0 -0</origin>
+			<pos>0.05 -0.999</pos>
+			<maxSize>1.20 1.20</maxSize>
+			<path>./neve.png</path>
+			<storyboard repeatAt="999"> 
+            <animation property="y" from="-0.999" to="0.999" begin="5000" duration="21500" mode="linear"/>
+         </storyboard>
+		</image>
+				
+		<!--NEVE MEIO--> 
+		<image name="avatar5" extra="static">
+			<origin>0 -0</origin>
+			<pos>0.20 -0.999</pos>
+			<maxSize>1.00 1.00</maxSize>
+			<path>./neve.png</path>
+			<storyboard repeatAt="999"> 
+        	<animation property="y" from="-0.999" to="0.999" begin="10000" duration="23500" mode="linear"/>
+         </storyboard>
+		</image>
+		
+		<!--nnn-->
+		<image name="nnn" extra="static">
+			<origin>0 -0</origin>
+			<pos>0.40 -0.999</pos>
+			<maxSize>1.20 1.20</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>3</zIndex>
+		    <path>./nnn.png</path>
+			<storyboard repeatAt="999">
+        		<animation property="opacity" from="0" to="1" duration="10000" mode="linear"/>
+				<animation property="x" from="1" begin="1" duration="17000" mode="easyOut"/>
+				<animation property="y" from="-0.999" to="0.999" begin="1" duration="15000" mode="linear"/>
+			</storyboard>
+		</image>
+		
+		<image name="nnn2" extra="true">
+		    <origin>0 -0</origin>
+			<pos>0.40 -0.999</pos>
+			<maxSize>1.20 1.20</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>3</zIndex>
+		    <path>./nnn.png</path>
+			<storyboard repeatAt="999">
+        		<animation property="opacity" from="0" to="1" duration="10000" mode="linear"/>
+				<animation property="x" from="-1" begin="1" duration="17000" mode="easyOut"/>
+				<animation property="y" from="-0.999" to="0.999" begin="1" duration="15000" mode="linear"/>
+
+        		
+			</storyboard>
+		</image>
+		
+		
+		
+		
+		
+		<!--MAX-->
+		<image name="max, max2" extra="static">
+			<origin>0 0</origin>
+			<pos>0.2823 0.20</pos>
+			<maxSize>0.42 0.7067</maxSize>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>3</zIndex>
+		</image>
+
+		<image name="max" extra="true">
+		    <path>./max.png</path>
+			<storyboard repeatAt="0">
+        		<animation property="opacity" from="0" to="1" duration="500" mode="linear"/>
+				<animation property="x" from="1" begin="0" duration="3000" mode="easyOut"/>
+
+        		<animation property="opacity" from="1" to="0" begin="6000" duration="10000" mode="easyOut"/>
+				<animation property="origin" to="0 -1" begin="5000" duration="10000" mode="linear"/>
+			</storyboard>
+		</image>
+		
+		<image name="max2" extra="static">
+			<path>./max2.png</path>
+			<zIndex>16</zIndex>
+			<storyboard>
+        		<animation property="scale"    to="1.02" begin="0"   autoreverse="true" duration="500" repeat="forever" mode="easyIn"/>
+        		<animation property="rotation" to="1.02" begin="150" autoreverse="true" duration="500" repeat="forever" mode="easyIn"/>
+
+        		<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+			</storyboard>
+		</image>
+				
+				<!-- papel de parede -->
+<image name="wp_master" extra="true">
+		 <origin>0.5 0.5</origin>
+		 <pos>0.590 0.385</pos>
+         <size>0.7900 0.7530</size>
+		 <delay>0</delay>
+		 <path>./../../background/${system.theme}.jpg</path>
+	 <zIndex>2</zIndex>
+	 <storyboard>
+<animation property="scale" from="1.3" to="0.98" begin="0" duration="600" mode="linear"/>
+</storyboard>
+</image>
+				
+	</view>
+</theme>

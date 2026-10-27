@@ -1,0 +1,53 @@
+<!-- Coleco ADAM -->
+
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<view name="system">
+	
+		<image name="plane" extra="static">
+			<origin>0.5 0.5</origin>
+			<size>0.20 0.35</size>									
+			<pos>1.2544271 0.975463</pos>									
+
+			<scale>0.61</scale>
+			<rotation>25</rotation>
+			<zIndex>180</zIndex>
+			<opacity>1</opacity>
+			<path>./plane.png</path>
+			<linearSmooth>true</linearSmooth>
+		
+		
+			 <storyboard>
+
+				
+                <animation property="rotation" from="25" to="0" begin="" duration="1500" mode="EaseInOut"/>
+				<animation property="pos" to="0.5283854 0.299537" begin="" duration="1500" mode="EaseInOut"/>
+				<animation property="scale" to="1" begin="" duration="1500" mode="EaseInOut"/>
+				
+				
+
+            </storyboard>		
+			
+		</image>
+		
+		<!-- papel de parede -->
+<image name="wp_master" extra="true">
+		 <origin>0.5 0.5</origin>
+		 <pos>0.590 0.385</pos>
+         <size>0.7900 0.7530</size>
+		 <delay>0</delay>
+		 <path>./../../background/${system.theme}.jpg</path>
+	 <zIndex>2</zIndex>
+	 <storyboard>
+<animation property="scale" from="1.3" to="0.98" begin="0" duration="600" mode="linear"/>
+</storyboard>
+</image>
+		
+		
+		
+		
+		
+	</view>
+
+</theme>

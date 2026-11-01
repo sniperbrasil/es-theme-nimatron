@@ -33,6 +33,9 @@ Tema customizado para **RetroBat 8** com shaders GLSL exclusivos, efeito de para
 3. Renomeie a pasta para `es-theme-nimatron`
 4. Reinicie o RetroBat
 
+### 📥 Baixar
+[Download ZIP](https://github.com/sniperbrasil/es-theme-nimatron/archive/refs/heads/main.zip)
+
 Estrutura final:
 ```
 RetroBat/

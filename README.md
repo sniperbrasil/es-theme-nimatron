@@ -16,9 +16,9 @@ Tema customizado para **RetroBat 8** com shaders GLSL exclusivos, efeito de para
 
 ### 📸 Screenshots
 
-[System View](./screenshots/system_view.jpg)
-[Detailed View](./screenshots/detailed_view.jpg)
-[Shader Effect](./screenshots/shader_effect.jpg)
+![System View](./screenshots/system_view.jpg)
+![Detailed View](./screenshots/detailed_view.jpg)
+![Shader Effect](./screenshots/shader_effect.jpg)
 
 ### 📦 Instalação
 

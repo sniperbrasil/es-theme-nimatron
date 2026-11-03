@@ -1,4 +1,4 @@
-# 🦇 ES-Theme-Nimatron - RetroBat 8
+# 🦇 ES-Theme-Nimatron - RetroBat 8 e Batocera 39+
 
 Tema customizado para **RetroBat 8** com shaders GLSL exclusivos, efeito de paralelogramo inclinado e quina elevada.
 
@@ -16,9 +16,9 @@ Tema customizado para **RetroBat 8** com shaders GLSL exclusivos, efeito de para
 
 ### 📸 Screenshots
 
+![Splash View](./screenshots/splash.jpg)
 ![System View](./screenshots/system_view.jpg)
 ![Detailed View](./screenshots/detailed_view.jpg)
-![Shader Effect](./screenshots/shader_effect.jpg)
 
 ### 📦 Instalação
 
@@ -105,9 +105,10 @@ git push
 
 Agradecimentos especiais a quem ajudou e inspirou este projeto:
 
-- **[Snapouille](https://github.com/Snapouille)** - Pelo trabalho no RetroBat e suporte com shaders
+- **[Snapouille](https://github.com/Snapouille)** - Pelo excelente trabalho nos temas
 - **[BobMoraneRetro](https://github.com/BobMoraneRetro)** - Pelos temas e referências
 - **[marcoriesco](https://github.com/marcoriesco)** - Pelas contribuições e ideias
+- **[Daknior](https://github.com/Darknior)** - Pela inspiração com o tema RVGM
 
 ### 📄 Créditos
 
@@ -120,4 +121,4 @@ Agradecimentos especiais a quem ajudou e inspirou este projeto:
 MIT License - Pode usar, modificar e distribuir livremente.
 
 ---
-Feito com ❤️ para a comunidade RetroBat Brasil
+Feito para a comunidade RetroBat e Batocera

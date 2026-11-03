@@ -36,23 +36,12 @@
 			<color>ffff00</color>
 			<fontPath>./main/fonts/XboxOriginalBold-YzPYy.otf</fontPath>
 			<fontSize>0.082</fontSize>
-			<glowColor>09090920</glowColor>
-			<glowSize>1</glowSize>
-			<glowOffset>1</glowOffset>
+			<glowColor>000000</glowColor>
+			<glowSize>2</glowSize>
+			<glowOffset>0</glowOffset>
 		</text>
 
-       		<image name="hotkey-tips" extra="true">
-			<color>208b20</color>
-			<origin>1 0.5</origin>
-			<pos>1 0.443</pos>
-			<maxSize>0.35</maxSize>
-			<maxSize tinyScreen="true">0.45</maxSize>			
-			<path>./main/hotkey-tips/en.png</path>
-			<path>./main/hotkey-tips/${lang}.png</path>
-			<linearSmooth>true</linearSmooth>
-			<zIndex>7</zIndex>
-		</image>
-		
+       				
 		<image name="logo_do_publicador" extra="true">
 		<path>./_art/logo/{game:publisher}.png</path>
 		<origin>0.5 0.5</origin>

@@ -1,21 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
   <formatVersion>7</formatVersion>
-  <variables>
-    <baseColor>8b0000</baseColor>
-    <gradientEndColor>6b2020</gradientEndColor>
-    <backgroundColor>252525</backgroundColor>
-    <centerFadeColor>8b000050</centerFadeColor>
-  </variables>
-  <subset name="colorset" displayName="${subset.colorset}">
-    <include name="blue" displayName="${blue}">./art/colors/blue.xml</include>
-    <include name="red" displayName="${red}"/>
-    <include name="green" displayName="${green}">./art/colors/green.xml</include>
-    <include name="yellow" displayName="${yellow}">./art/colors/yellow.xml</include>
-    <include name="violet" displayName="${violet}">./art/colors/violet.xml</include>
-    <include name="cyan" displayName="${cyan}>">./art/colors/cyan.xml</include>
-    <include name="orange" displayName="${orange}>">./art/colors/orange.xml</include>
-  </subset>
+  
   <view name="splash">
     <splash name="splash">
       <backgroundColor>000000FF</backgroundColor>
@@ -26,7 +12,7 @@
       <size>0.5 0.030</size>
       <color>6060607F</color>
       <colorEnd>6060607F</colorEnd>
-      <roundCorners>0.03</roundCorners>
+      <roundCorners>0.01</roundCorners>
     </image>
     <image name="progressbar:active">
       <tile>true</tile>
@@ -36,21 +22,41 @@
     </image>
     	
 	
-	<!--image name="logo_ES" extra="static">
-			<origin>0.5 0</origin>
-			<pos>0.850 0.100</pos>
-			<maxSize>0.300 0.300</maxSize>
+	<image name="logo_ES" extra="static">
+			<origin>0.5 0.5</origin>
+			<pos>0.900 0.520</pos>
+			<maxSize>0.200 0.200</maxSize>
 			<backgroundColor>ff000000</backgroundColor>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>10</zIndex>
 		    <path>./_art/logo_ES.png</path>
-	</image-->
+	</image>
+	
+	<image name="logo_rb" extra="static">
+			<origin>0.5 0.5</origin>
+			<pos>0.900 0.150</pos>
+			<maxSize>0.200 0.200</maxSize>
+			<backgroundColor>ff000000</backgroundColor>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>10</zIndex>
+		    <path>./_art/logo_rb.png</path>
+	</image>
+	
+	<image name="logo_bat" extra="static">
+			<origin>0.5 0.5</origin>
+			<pos>0.900 0.320</pos>
+			<maxSize>0.200 0.200</maxSize>
+			<backgroundColor>ff000000</backgroundColor>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>10</zIndex>
+		    <path>./_art/batocera_logo.png</path>
+	</image>
 	
     <text name="label">
-      <color>FFFFFFFF</color>
-      <glowColor>00000018</glowColor>
-      <glowSize>3</glowSize>
-      <glowOffset>1</glowOffset>
+      <color>000000</color>
+      <glowColor>ffff00</glowColor>
+      <glowSize>2</glowSize>
+      <glowOffset>0</glowOffset>
     </text>
 	
 	<image name="background" extra="true">

@@ -14,21 +14,12 @@
 	<lineSpacing>1.4</lineSpacing> 		 
 	<primaryColor>ffff00</primaryColor>	 
 	<selectorColor>0000ff</selectorColor>
-	<selectedColor>FFFFFFFF</selectedColor>
+	<selectedColor>ffffff</selectedColor>
     <scrollSound>./_art/sounds/click.mp3</scrollSound>	
 	<zIndex>15</zIndex>	
 </textlist>
 
 <!--  Moldura de fundo da gamelist  -->
-<!--image name="back_gamelist" extra="true">
-     <path>./_art/white.png</path>  
-     <pos>0.135 0.400</pos>
-     <origin>0.5 0.5</origin>
-     <size>0.250 0.480</size>
-	 <opacity>50</opacity>
-     <zIndex>9</zIndex>
-     <color>0000ff</color>
-</image-->
 
 <image name="back_gamelist_esq" extra="true">
      <path>./_art/white.png</path>  
@@ -76,28 +67,44 @@
 <!-- WallPaper Por Sistema 	--> 	
 <image name="wallpaper_por_sistema" extra="true">
     <origin>0.5 0.5</origin>
-    <pos>0.470 0.320</pos>
+    <pos>0.470 0.325</pos>
     <size>0.380 0.340</size>
     <path>./_art/background/${system.theme}.jpg</path>
     <zIndex>2</zIndex>
-</image>
+    <opacity>0</opacity>
 
+        <storyboard event="activate">
+        <animation property="opacity" to="1" begin="100" duration="400" mode="Linear"/>
+        </storyboard>
+</image>
 
 <!-- Se tiver fanart, ela sobrepoe o wallpaper -->
 <image name="md_fanart">
 	<origin>0.5 0.5</origin>
-    <pos>0.470 0.320</pos>
+    <pos>0.470 0.325</pos>
     <size>0.380 0.340</size>
-    <zIndex>3</zIndex>         
+	<zIndex>3</zIndex> 
+	<opacity>0</opacity>
+
+        <storyboard event="activate">
+        		
+        <animation property="opacity" to="1" begin="100" duration="400" mode="Linear"/>
+        </storyboard>
+	
 </image>
 
 <!-- Fundo fanart -->		
 <image name="fundo_fan" extra="true">
     <origin>0.5 0.5</origin>
-    <pos>0.470 0.320</pos>
+    <pos>0.470 0.325</pos>
     <size>0.390 0.360</size>
     <path>./_art/white.png</path>
     <zIndex>1</zIndex> 
+	<opacity>0</opacity>
+
+        <storyboard event="activate">
+        <animation property="opacity" to="1" begin="100" duration="400" mode="Linear"/>
+        </storyboard>
 </image> 
 
 
@@ -130,13 +137,7 @@
 	<rotation>-4</rotation>
     <zIndex>30</zIndex>
 	
-	<!--shader> 
-	<path>./_art/efeitos/testeD.glsl</path>
-	<side>-0.18</side>
-<backTilt>0.00</backTilt>
-            </shader-->
-			
-			
+	
 			<shader>
     <path>./_art/efeitos/image_paralelogramo.glsl</path>
 
@@ -151,39 +152,6 @@
 </shader>
 	
 </image>
-
-<!-- Fundo marquee -->		
-<!--image name="fundoMarquee" extra="true">
-    <origin>0.5 0.5</origin>
-    <pos>0.810 0.195</pos>
-    <size>0.230 0.110</size>
-    <path>./_art/white.png</path>
-	<color>ffffff</color>
-	<opacity>90</opacity>
-	<rotation>-4</rotation>
-    <zIndex>29</zIndex> 
-</image--> 
-
-<!--image name="hardware" extra="static">
-			<origin>0.5 0.5</origin>
-			<pos>0.550 0.760</pos>
-			<delay>0.5</delay>
-			<opacity>0</opacity>
-			<!--size>0.220 0.230</size-->
-			<!--maxSize>0.160 0.250</maxSize>
-			<path>./_art/hardware/${system.theme}.png</path>
-			<linearSmooth>true</linearSmooth>
-			<zIndex>99</zIndex>
-			<color>ffffff</color>
-			
-			<storyboard> 
-			<animation property="opacity" from="0" to="1" begin="300" duration="500" mode="Linear"/>
-			<animation property="scale" from="1.0" to="1.20" begin="300" duration="300" mode="Linear"/>
-			
-			<animation property="rotation" from="-3" to="3" duration="1000" autoreverse="true" begin="800" repeat="forever"/>
-			</storyboard> 
-		</image-->
-
 
 
 <!--  Detalhes -->
@@ -352,7 +320,6 @@
       </text>	
 
 
-
 <!--  Painel de fundo avaliacao estrelas  -->
 <image name="back_aval" extra="true">
      <path>./_art/white.png</path>  
@@ -364,14 +331,7 @@
      <color>FFFFFF</color>
 </image>
 	  
-<!-- Avaliacao do jogo =estrelas=-->	  
-      <!--text name="md_lbl_rating">
-         <pos>0.700 0.040</pos>
-         <size>0.12 0.035</size>
-		 <fontSize>0.025</fontSize>
-		 <color>ffff00</color>
-		 <zIndex>15</zIndex>                  
-      </text-->
+
 <!-- Avaliacao do jogo =estrelas=-->		
 	     <rating name="md_rating">      
          <pos>0.777 0.035</pos>
@@ -405,59 +365,7 @@
 
 </video>
 
-<!--video name="md_video">
-	<pos>0.820 0.435</pos>
-	<origin>0.5 0.5</origin>
-	<!--maxSize>0.170 0.375</maxSize-->
-	<!--size>0.210 0.230</size>
-	<loops>99</loops>
-	<delay>0.50</delay> 
-	<effect>instant</effect>
-	<zIndex>8</zIndex> 
-</video-->
 
-
-<!-- ultimo funcional paralelogramo>
-<video name="md_video">
-    
-            <pos>0.825 0.506</pos>
-            <size>0.187 0.266</size>
-            <origin>0.5 0.5</origin>
-			<effect>none</effect>
-			<rotation>0</rotation>
-
-    <shader> 
-	
-	<path>./_art/efeitos/paralelogramo.glsl</path>
-	<side>-0.20</side>
-	<backTilt>0.00</backTilt>
-    </shader>
-	
-
-    <zIndex>9</zIndex>
-</video-->
-
-<!-- ultimo funcional pra frente e pros lados>
-<video name="md_video">
-    
-            <pos>0.825 0.506</pos>
-            <size>0.287 0.366</size>
-            <origin>0.5 0.5</origin>
-			<effect>none</effect>
-			<rotation>0</rotation>
-
-    <shader> 
-	
-	<path>./_art/efeitos/girar_X_Y.glsl</path>
-	<tiltAngle>10</tiltAngle>
-    <tiltAngleX>30</tiltAngleX>
-    <perspectiveDepth>0.9</perspectiveDepth>
-    <lowerLeftLift>0.05</lowerLeftLift>
-    </shader>
-	
-
-    <zIndex>9</zIndex>
-</video-->
 
 <video name="md_video">
     
@@ -505,20 +413,6 @@
 </image>
 
 	  
-
-<!--text name="md_description">
-         <pos>0.695 0.760</pos>
-         <size>0.230 0.180</size>
-		 <fontSize>0.022</fontSize>
-		 <color>ffffff</color>
-		 <alignment>left</alignment>   
-         <zIndex>15</zIndex>         
-      </text-->
-
-
-<!--  PAINEL logo do jogo -->	  
-
-
 
 <!-- ICONES DO JOGO -->	      	
 
@@ -619,7 +513,7 @@
 
 
 		
-<!--  Informa se o jogo foi escondido = entendi nada = nao sei pra que serve = pode escolher o lugar no tema -->
+<!--  Informa se o jogo foi escondido = aparentemente sem utilidade = pode escolher o lugar no tema -->
     <image name="md_hidden">
 			<origin>0 0</origin>
 	        <pos>0.710 0.043</pos>
@@ -653,17 +547,6 @@
 	 <color>ffff00</color>
 </image>
 
-
-<!--image name="margeminferior" extra="true">
-      <tile>false</tile>
-      <size>1 0.07</size>
-      <origin>0.5 0.5</origin>
-      <pos>0 0.9595</pos>
-	  <path>./_art/bg2.png</path>
-      <color>ffff00</color>
-      <zIndex>18</zIndex>
-      <clipRect>0 0 1 0.160</clipRect>
-    </image-->
 
 
 <!-- Help do rodape -->

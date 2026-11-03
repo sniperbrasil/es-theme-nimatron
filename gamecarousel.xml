@@ -4,9 +4,6 @@
 
 <view name="gamecarousel">
 
-<!----------------------------------------------------------->
-<!------------------------ CARROUSEL ------------------------>
-<!----------------------------------------------------------->
 
 <gamecarousel name="gamecarousel">
 <!--type>vertical_wheel</type-->
@@ -39,10 +36,7 @@
         <verticalAlignment>top</verticalAlignment>
 		<forceUppercase>1</forceUppercase>
 		<color>f5f542</color>
-		<!--fontPath>./_art/font/Maxlock.ttf</fontPath-->
-		 <!--fontPath>./_art/font/flatwheat.ttf</fontPath-->
-		 <fontPath>./_art/font/Blue Water.otf</fontPath>
-		 
+		<fontPath>./_art/font/Blue Water.otf</fontPath>
 		<fontSize>0.040</fontSize>
 		<lineSpacing>0.9</lineSpacing>
 		<glowColor>000000</glowColor>
@@ -50,9 +44,7 @@
 		<zIndex>22</zIndex>
 		
 		<storyboard event="activate">
-        <!--animation property="scale" from="1.0" to="1.50" begin="700" duration="300" mode="Linear"/-->
-        <!--animation property="x" to="-0.01" begin="700" duration="300" mode="linear"/-->
-				
+        				
 		<animation property="y" to="-0.12" begin="900" duration="300" mode="linear"/>
         <animation property="x" to="0.06" begin="900" duration="300" mode="linear"/>
 		
@@ -69,8 +61,6 @@
 
 <image name="gamecarouselLogo">
 <storyboard event="activate">
-<!--animation property="scale" from="1.3" to="2.1" begin="100" duration="200" mode="Linear"/-->
-<!--animation property="x" to="-0.001" begin="200" duration="300" mode="linear"/-->
 <animation property="y" to="-0.12" begin="900" duration="300" mode="linear"/>
 <animation property="x" to="0.04" begin="900" duration="300" mode="linear"/>
 <animation property="opacity" to="1" begin="0" duration="500" mode="Linear"/>
@@ -80,27 +70,8 @@
 <animation property="opacity" from="1" to="0.01" begin="800" duration="700" mode="Linear"/>
 </storyboard>
 
-<!--storyboard event="deactivate">
-<animation property="opacity" to="1" begin="0" duration="500" mode="Linear"/>
 
-</storyboard-->
 </image>
-
-<!--image name="gamecarouselLogo">
-<storyboard event="activate">
-<animation property="scale" to="1.2" begin="0" duration="500" mode="Linear"/>
-</storyboard>
-<storyboard event="scroll">
-<animation property="scale" to="1" begin="0" duration="500" mode="Linear"/>
-
-</storyboard>
-<storyboard event="deactivate">
-<animation property="scale" to="1" begin="0" duration="500" mode="Linear"/>
-
-</storyboard>
-</image-->
-
-
 
 
 <!-- margens superior -->
@@ -222,10 +193,6 @@
 <opacity>0.4</opacity>
 <zIndex>6</zIndex>
 <path>./_art/bg.png</path>
-
-<!--storyboard event="activate">
-		<animation property="opacity" to="1" begin="500" duration="400" mode="Linear"/>
-        </storyboard-->
 
 </image>
 
@@ -370,14 +337,6 @@
      <color>FFFFFF</color>
 </image>
 
-
-
-
-
-
-
-
-
 <!--------------------- capa do jogo ---------------------->
 
 <image name="md_thumbnail">
@@ -457,7 +416,7 @@
 	  <size>0.070 0.115</size>
 	  <alignment>left</alignment>
 	  <color>FFFFFF</color>
-      <zIndex>99</zIndex>
+      <zIndex>999</zIndex>
 	  <storyboard event="open" repeatAt="350">
 	 
 				<animation property="color" to="00ff7f" begin="1000" duration="100" autoreverse="true" repeat="5" mode="linear"/>
@@ -523,11 +482,6 @@
 <color>ffffff</color>
 <zIndex>8</zIndex>
 <path>./_art/white.png</path>
-
-        <!--storyboard>
-		<animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="Linear"/>
-        </storyboard-->
-		
 		
 <storyboard event="activate">
 <animation property="opacity" from="0" to="0.6" begin="1200" duration="500" mode="Linear"/>
@@ -544,20 +498,14 @@
 <color>ffffff</color>
 <zIndex>5</zIndex>
 <path>./_art/white2.png</path>
-
-        <!--storyboard>
-		<animation property="opacity" from="0" to="1" begin="1200" duration="500" mode="Linear"/>
-        </storyboard-->
-		
+       		
 		<storyboard event="activate">
 <animation property="opacity" to="0.8" begin="1200" duration="500" mode="Linear"/>
 
 </storyboard>
 
 </image>
-	  
-
-
+	
 <!-- Avaliacao do jogo =estrelas=-->		
 	     <rating name="md_rating">      
          <pos>0.060 0.882</pos>
@@ -736,7 +684,7 @@
 
 
 		
-<!--  Informa se o jogo foi escondido = entendi nada = nao sei pra que serve = pode escolher o lugar no tema -->
+<!--  Informa se o jogo foi escondido = pode escolher o lugar no tema -->
     <image name="md_hidden">
 			<origin>0 0</origin>
 	        <pos>0.260 0.700</pos>
@@ -777,10 +725,7 @@
             </storyboard>
 		</image>
 		
-		
-		
-		
-		
+				
 	
 	<!-- PUBLICADOR -->  
 	<image name="logo_do_publicador" extra="true">
@@ -796,8 +741,7 @@
 		<rotation>-25</rotation>
 		<zIndex>96</zIndex>
 		
-		
-		
+				
 	</image>
 	
 	
@@ -896,19 +840,6 @@
 	</text>  
 
 
-<!--  Publicador =texto principal= -->	  
-      <!--text name="md_lbl_publisher">
-         <pos>0.070 0.710</pos>
-         <size>0.12 0.035</size>
-		 <fontSize>0.020</fontSize>
-		 <color>ffff00</color>
-		 <opacity>0</opacity>
-		 <fontPath>./_art/font/flatwheat.ttf</fontPath>
-		 <zIndex>45</zIndex>
-<storyboard event="activate">
-		<animation property="opacity" from="0" to="1" begin="1100" duration="700" mode="Linear"/>
-        </storyboard>		 
-      </text-->
 	  
 <!--  Publicador =apresentacao= -->	  
       <text name="md_publisher">
@@ -1063,9 +994,7 @@
             <size>0.222 0.277</size>
             <origin>0.5 0.5</origin>
 			<effect>none</effect>
-	        <!--loops>99</loops-->
-	        <!--delay>0.50</delay--> 
-	        
+	        	        
             <path>./_art/static.mp4</path>
 
             <opacity>1</opacity>
@@ -1132,12 +1061,7 @@
 	<rotation>-4</rotation>
     <zIndex>30</zIndex>
 	
-	<!--shader> 
-	<path>./_art/efeitos/testeD.glsl</path>
-	<side>-0.18</side>
-<backTilt>0.00</backTilt>
-            </shader-->
-			
+				
 			
 			<shader>
     <path>./_art/efeitos/image_paralelogramo.glsl</path>
